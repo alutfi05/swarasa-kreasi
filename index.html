@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Swarasa Kreasi</title>
+  </head>
+  <body id="beranda">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="navbar-box">
+          <div class="logo">
+            <h1>E-Catalog.</h1>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#beranda">Beranda</a>
+            </li>
+            <li>
+              <a href="#layanan">Layanan</a>
+            </li>
+            <li>
+              <a href="#produk">Produk Kami</a>
+            </li>
+            <li>
+              <a href="#review">Review</a>
+            </li>
+            <li>
+              <a href="#kontak">Kontak</a>
+            </li>
+          </ul>
+
+          <!-- Hamburger -->
+          <i class="ri-menu-3-line ri-2x"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar -->
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero-box">
+          <div class="box" data-aos="fade-up" data-aos-duration="1000">
+            <h1>
+              Katalog <br />
+              Swarasa Kreasi
+            </h1>
+            <p>Dari rasa jadi kreasi, untuk setiap momen berharga</p>
+            <a href="#produk">Detail Produk Kami</a>
+          </div>
+          <div class="box" data-aos="fade-down" data-aos-duration="1000">
+            <img
+              src="./assets/images/swarasa_kreasi.jpg"
+              alt="Swarasa Kreasi"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero -->
+
+    <!-- Layanan -->
+    <div class="layanan" id="layanan">
+      <div class="container">
+        <div class="layanan-box">
+          <div class="box" data-aos="fade-up" data-aos-duration="1000">
+            <i class="ri-star-fill ri-2x"></i>
+            <h2>Produk Original</h2>
+            <p>
+              Kami menjamin setiap produk original berkualitas tinggi resmi
+              terpercaya aman digunakan dan bergaransi penuh selalu
+            </p>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <i class="ri-price-tag-fill ri-2x"></i>
+            <h2>Harga Terjangkau</h2>
+            <p>
+              Harga terjangkau menjadi prioritas kami agar semua kalangan dapat
+              membeli produk berkualitas dengan mudah
+            </p>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <i class="ri-shopping-cart-fill ri-2x"></i>
+            <h2>Terjual 10.000+</h2>
+            <p>
+              Sudah terjual sepuluh ribu lebih unit menjadikan produk ini
+              pilihan populer dengan kualitas terbaik terpercaya
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Layanan -->
+
+    <!-- Produk -->
+    <div class="produk" id="produk">
+      <div class="container">
+        <div class="produk-box">
+          <h1 data-aos="fade-up" data-aos-duration="1000">Produk Kami</h1>
+          <ul data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <li class="active">All Product</li>
+            <li>Album Foto 4R</li>
+            <li>Karangan Bunga</li>
+            <li>Flower Paper 50x70</li>
+            <li>Flower Paper 60x90</li>
+            <li>Flower Paper 80x1200</li>
+          </ul>
+
+          <div class="produk-list">
+            <div class="produk-card" data-filter="album foto 4r">
+              <a href="/details/album_foto_4R_gold.html" target="_blank"
+                ><img src="./assets/images/album_foto_1.jpg" alt="Produk Image"
+              /></a>
+              <div class="produk-info">
+                <h3>Album Foto 4R - Gold</h3>
+                <p>
+                  Album foto elegan dengan kapasitas 100 lembar, cocok untuk
+                  momen pernikahan.
+                </p>
+                <span class="harga">Rp 50.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="album foto 4r">
+              <img src="./assets/images/album_foto_2.jpg" alt="Produk Image" />
+              <div class="produk-info">
+                <h3>Album Foto 4R - Minimalist</h3>
+                <p>
+                  Desain simpel dan estetik untuk menyimpan foto kesayangan
+                  Anda.
+                </p>
+                <span class="harga">Rp 45.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="album foto 4r">
+              <img src="./assets/images/album_foto_3.jpg" alt="Produk Image" />
+              <div class="produk-info">
+                <h3>Album Foto 4R - Classic</h3>
+                <p>
+                  Nuansa klasik dengan sampul kulit sintetis berkualitas tinggi.
+                </p>
+                <span class="harga">Rp 60.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="album foto 4r">
+              <img src="./assets/images/album_foto_4.jpg" alt="Produk Image" />
+              <div class="produk-info">
+                <h3>Album Foto 4R - Pastel</h3>
+                <p>
+                  Pilihan warna pastel yang lucu, sangat cocok untuk foto bayi
+                  atau anak.
+                </p>
+                <span class="harga">Rp 48.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="album foto 4r">
+              <img src="./assets/images/album_foto_5.jpg" alt="Produk Image" />
+              <div class="produk-info">
+                <h3>Album Foto 4R - Premium</h3>
+                <p>
+                  Kualitas kertas tebal anti-jamur untuk perlindungan jangka
+                  panjang.
+                </p>
+                <span class="harga">Rp 75.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 50x70">
+              <img
+                src="./assets/images/flower_paper_50_1.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 50x70 Red</h3>
+                <p>Kertas bunga premium ukuran 50x70 cm, warna merah merona.</p>
+                <span class="harga">Rp 15.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 50x70">
+              <img
+                src="./assets/images/flower_paper_50_2.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 50x70 Pink</h3>
+                <p>Bahan waterproof, sangat pas untuk buket bunga wisuda.</p>
+                <span class="harga">Rp 15.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 50x70">
+              <img
+                src="./assets/images/flower_paper_50_3.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 50x70 White</h3>
+                <p>
+                  Warna putih bersih memberikan kesan suci dan elegan pada
+                  buket.
+                </p>
+                <span class="harga">Rp 15.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 50x70">
+              <img
+                src="./assets/images/flower_paper_50_4.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 50x70 Blue</h3>
+                <p>Kertas buket dengan tekstur lembut dan tidak mudah lecek.</p>
+                <span class="harga">Rp 15.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 50x70">
+              <img
+                src="./assets/images/flower_paper_50_5.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 50x70 Yellow</h3>
+                <p>
+                  Warna kuning cerah untuk memberikan energi positif pada hadiah
+                  Anda.
+                </p>
+                <span class="harga">Rp 15.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 50x70">
+              <img
+                src="./assets/images/flower_paper_50_6.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 50x70 Purple</h3>
+                <p>Kertas bungkus bunga kualitas impor, warna ungu mewah.</p>
+                <span class="harga">Rp 17.500</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 60x90">
+              <img
+                src="./assets/images/flower_paper_60_2.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 60x90 Silver</h3>
+                <p>
+                  Ukuran lebih besar 60x90 cm dengan sentuhan warna silver
+                  glossy.
+                </p>
+                <span class="harga">Rp 22.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 60x90">
+              <img
+                src="./assets/images/flower_paper_60_3.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 60x90 Gold</h3>
+                <p>
+                  Bahan tebal tepercaya mewah, pas untuk buket uang ukuran
+                  besar.
+                </p>
+                <span class="harga">Rp 25.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 60x90">
+              <img
+                src="./assets/images/flower_paper_60_4.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 60x90 Black</h3>
+                <p>
+                  Warna hitam pekat untuk menciptakan kesan buket yang
+                  eksklusif.
+                </p>
+                <span class="harga">Rp 22.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 60x90">
+              <img
+                src="./assets/images/flower_paper_60_5.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 60x90 Maroon</h3>
+                <p>
+                  Warna merah maroon yang tidak luntur meskipun terkena air.
+                </p>
+                <span class="harga">Rp 22.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 60x90">
+              <img
+                src="./assets/images/flower_paper_60_6.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 60x90 Tosca</h3>
+                <p>Warna hijau tosca yang unik dan jarang ada di pasaran.</p>
+                <span class="harga">Rp 22.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 60x90">
+              <img
+                src="./assets/images/flower_paper_60_7.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 60x90 Lilac</h3>
+                <p>
+                  Warna lilac yang sedang tren, sangat diminati kalangan muda.
+                </p>
+                <span class="harga">Rp 23.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 60x90">
+              <img
+                src="./assets/images/flower_paper_60_8.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper 60x90 Navy</h3>
+                <p>
+                  Bahan matte berkualitas tinggi dengan pilihan warna biru navy.
+                </p>
+                <span class="harga">Rp 22.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 80x1200">
+              <img
+                src="./assets/images/flower_paper_80_2.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper Roll 80x1200 Type A</h3>
+                <p>
+                  Kertas bunga format roll panjang 12 meter, hemat untuk
+                  produksi besar.
+                </p>
+                <span class="harga">Rp 120.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 80x1200">
+              <img
+                src="./assets/images/flower_paper_80_3.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper Roll 80x1200 Type B</h3>
+                <p>
+                  Kertas roll motif minimalis tebal, aman digunakan tidak mudah
+                  sobek.
+                </p>
+                <span class="harga">Rp 125.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="flower paper 80x1200">
+              <img
+                src="./assets/images/flower_paper_80_4.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Flower Paper Roll 80x1200 Premium</h3>
+                <p>
+                  Kualitas super premium bergaransi penuh untuk hasil buket
+                  terbaik.
+                </p>
+                <span class="harga">Rp 140.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_1.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Karangan Bunga Papan Congratulations</h3>
+                <p>
+                  Ukuran standar 2x1.25 meter untuk ucapan selamat sukses toko
+                  baru.
+                </p>
+                <span class="harga">Rp 500.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_2.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Karangan Bunga Happy Wedding Elegant</h3>
+                <p>
+                  Rangkaian bunga segar pilihan dengan kombinasi warna romantis.
+                </p>
+                <span class="harga">Rp 650.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_3.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Bunga Papan Duka Cita Deluxe</h3>
+                <p>
+                  Ucapan belasungkawa formal dengan proses pengerjaan cepat.
+                </p>
+                <span class="harga">Rp 550.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_4.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Karangan Bunga Grand Opening</h3>
+                <p>
+                  Desain mewah dengan dua titik bunga atas bawah yang lebat.
+                </p>
+                <span class="harga">Rp 750.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_5.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Standing Flower Meja</h3>
+                <p>
+                  Rangkaian bunga berdiri minimalis untuk diletakkan di dalam
+                  ruangan.
+                </p>
+                <span class="harga">Rp 350.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_6.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Karangan Bunga Wisuda / Sertijab</h3>
+                <p>
+                  Bunga papan mini yang estetik dan kekinian untuk momen
+                  kelulusan.
+                </p>
+                <span class="harga">Rp 400.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_7.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Bunga Papan Custom Logo</h3>
+                <p>
+                  Bisa request tambahan cetak logo perusahaan secara full color.
+                </p>
+                <span class="harga">Rp 800.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_8.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Karangan Bunga Dirgahayu / HUT</h3>
+                <p>
+                  Cocok untuk ucapan selamat ulang tahun instansi atau instansi
+                  resmi.
+                </p>
+                <span class="harga">Rp 600.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_9.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Standing Flower Krans</h3>
+                <p>
+                  Rangkaian bunga melingkar khusus untuk penghormatan terakhir.
+                </p>
+                <span class="harga">Rp 450.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_10.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Bunga Papan Anniversary Perusahaan</h3>
+                <p>
+                  Ukuran jumbo 2x2 meter dengan hiasan lampu LED kelap-kelip.
+                </p>
+                <span class="harga">Rp 1.200.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_11.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Karangan Bunga Anggrek Eksklusif</h3>
+                <p>Menggunakan kombinasi bunga anggrek asli yang tahan lama.</p>
+                <span class="harga">Rp 950.000</span>
+              </div>
+            </div>
+
+            <div class="produk-card" data-filter="karangan bunga">
+              <img
+                src="./assets/images/karangan_bunga_12.jpg"
+                alt="Produk Image"
+              />
+              <div class="produk-info">
+                <h3>Bunga Papan Hemat Kilat</h3>
+                <p>
+                  Solusi ekonomis pengerjaan di bawah 3 jam langsung sampai
+                  lokasi.
+                </p>
+                <span class="harga">Rp 450.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="pesan">
+            <a href="https://wa.me/6289652901718" target="_blank"
+              >Pesan sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Produk -->
+
+    <!-- Review -->
+    <div class="review" id="review">
+      <h1 data-aos="fade-up" data-aos-duration="1000">Customer Review</h1>
+      <div class="container">
+        <div class="review-box">
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="stars">
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+            </div>
+            <p>
+              Proses pengerjaan cepat, adminnya sangat baik, hasilnya juga
+              sangat memuaskan. cuma saya emang salah pilih bahan banner aja tp
+              hasilnya pun tetap bagusss. gambar gaada yang pecah-pecah.
+              pengirimannya juga cepet bangettt. ini karena kamera aja jd
+              keliatan buram tp aslinya ngga kok
+            </p>
+            <div class="user">
+              <img
+                src="./assets/images/user_profile_woman.jpg"
+                alt="User Profile"
+              />
+              <div class="user-info">
+                <h3>X**a</h3>
+                <span>happy customer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div class="stars">
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+            </div>
+            <p>
+              Pelayanan sangat baik..fast response..pengiriman
+              cepat..rama..recommended
+            </p>
+            <div class="user">
+              <img
+                src="./assets/images/user_profile_man.jpg"
+                alt="User Profile"
+              />
+              <div class="user-info">
+                <h3>L**m</h3>
+                <span>happy customer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <div class="stars">
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+            </div>
+            <p>
+              Proses pembuatan dan pengemasan sangat cepat, pesan kemarin datang
+              hari ini. admin sangat ramah. kualitas produk sangat diluar
+              ekspektasi, worth it beli disini!
+            </p>
+            <div class="user">
+              <img src="./assets/images/user_profile.png" alt="User Profile" />
+              <div class="user-info">
+                <h3>C**a</h3>
+                <span>happy customer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <div class="stars">
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+            </div>
+            <p>Pembuatan dan pengiriman cepat, hasilnya bagus banget 👍👍👍</p>
+            <div class="user">
+              <img
+                src="./assets/images/user_profile_man.jpg"
+                alt="User Profile"
+              />
+              <div class="user-info">
+                <h3>pasya</h3>
+                <span>happy customer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div class="stars">
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+            </div>
+            <p>CAKEP BANGETTT, SELLER RESPONSIF PENGIRIMAN CEPATTTTTTT</p>
+            <div class="user">
+              <img src="./assets/images/user_profile.png" alt="User Profile" />
+              <div class="user-info">
+                <h3>H**m</h3>
+                <span>happy customer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <div class="stars">
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+              <i class="ri-star-fill ri-2x"></i>
+            </div>
+            <p>
+              Pengirimannya cepat 👍 fotonya di edit lagi jd gambar-gambarnya
+              lbh cerah dan baguss 🥰 Bakal jadi langganan cetak foto disini 👍
+            </p>
+            <div class="user">
+              <img
+                src="./assets/images/user_profile_woman.jpg"
+                alt="User Profile"
+              />
+              <div class="user-info">
+                <h3>N**a</h3>
+                <span>happy customer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Review -->
+
+    <!-- Kontak -->
+    <div class="hero-maps" id="kontak">
+      <div class="container">
+        <div class="hero-maps-box">
+          <div class="box" data-aos="fade-down" data-aos-duration="1000">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.093104521797!2d106.96169427400747!3d-6.251462061207076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d575e8bd21d%3A0x3af1d2e37da36408!2sSwarasa%20Kreasi%20Florist%20%26%20Gifting%20-%20Toko%20Bunga%20Bekasi!5e0!3m2!1sid!2sid!4v1779538266105!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="box" data-aos="fade-up" data-aos-duration="1000">
+            <h3>Swarasa Kreasi Florist & Gifting - Toko Bunga Bekasi</h3>
+            <p>
+              Jl. Permata No.Ujung, RT.002/RW.015, Jakasampurna, Kec. Bekasi
+              Bar., Kota Bks, Jawa Barat 17145
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="box">
+        <p>
+          &copy; Copyright 2026 by <span>Kelompok 50B</span>. All Right
+          Reserved.
+        </p>
+      </div>
+      <div class="box">
+        <i class="ri-whatsapp-fill ri-2x"></i>
+        <p>Hubungi kami : 0896-5290-1718 / 0851-1744-6899</p>
+      </div>
+    </div>
+    <!-- Kontak -->
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
