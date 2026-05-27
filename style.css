@@ -237,7 +237,7 @@ body {
 
 /* Review */
 .review {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .review h1 {
@@ -316,6 +316,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+
+.hero-maps h1 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .hero-maps-box h3 {
