@@ -1,29 +1,30 @@
 * {
   margin: 0;
   padding: 0;
-  border-inline: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
+  color: #222;
 }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin-inline: auto;
 }
 
 @media (max-width: 992px) {
   .container {
-    width: 90%;
+    width: 92%;
   }
 }
 
 /* Navbar */
 .navbar {
-  padding: 20px 0 20px 0;
+  padding: 24px 0;
 }
 
 .navbar-box {
@@ -38,21 +39,206 @@ body {
 }
 
 .navbar-box .menu li {
-  list-style-type: none;
+  list-style: none;
 }
+
 .navbar-box .menu li a {
   text-decoration: none;
-  color: black;
-  font-size: 18px;
+  color: #111;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .navbar-box .menu li a:hover {
-  border-bottom: 3px solid #481a1b;
+  color: #481a1b;
 }
 
 .navbar-box .ri-menu-3-line {
   display: none;
-  font-weight: bold;
+}
+/* Navbar */
+
+/* Hero */
+.hero {
+  padding: 50px 0 30px;
+}
+
+.hero-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  align-items: center;
+}
+
+.hero-box img {
+  width: 100%;
+  max-height: 650px;
+  object-fit: contain;
+  border-radius: 28px;
+  background-color: white;
+  padding: 12px;
+  display: block;
+}
+
+.hero-box .harga {
+  font-size: 42px;
+  font-weight: 700;
+  color: #481a1b;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hero-box .details {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.short-desc {
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 35px;
+}
+
+.hero-box a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #481a1b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.hero-box a:hover {
+  transform: translateY(-3px);
+}
+
+/* Product Section */
+.product-section {
+  padding: 60px 0;
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.detail-card {
+  background-color: white;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.detail-card:hover {
+  transform: translateY(-5px);
+}
+
+.detail-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.detail-header i {
+  font-size: 22px;
+  background-color: rgba(72, 26, 27, 0.08);
+  color: #481a1b;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.detail-header h3 {
+  color: #481a1b;
+  font-size: 18px;
+}
+
+.detail-card ul {
+  padding-left: 18px;
+}
+
+.detail-card ul li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+  color: #555;
+  font-size: 14px;
+}
+
+.product-description {
+  margin-top: 35px;
+  background-color: white;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.product-description p {
+  line-height: 2;
+  text-align: justify;
+  color: #444;
+}
+
+/* Produk */
+.produk {
+  padding: 30px 0 80px;
+}
+
+.produk h1 {
+  margin-bottom: 35px;
+}
+
+.produk-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.produk-card {
+  background-color: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.produk-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.produk-info {
+  padding: 20px;
+}
+
+.produk-info h3 {
+  margin-bottom: 10px;
+}
+
+.produk-info p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.produk-info .harga {
+  color: #481a1b;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 992px) {
+  .hero-box {
+    grid-template-columns: 1fr;
+  }
+
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 768px) {
@@ -61,140 +247,43 @@ body {
   }
 
   .navbar-box .menu {
-    position: absolute;
-    top: -100%;
-    left: 50%;
-    transform: translateX(-50%);
-    flex-direction: column;
-    text-align: center;
-    background-color: #481a1b;
-    width: 100%;
-    padding: 40px 0 40px 0;
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
+    display: none;
   }
 
-  .navbar-box .menu.menu-active {
-    top: 100px;
-    opacity: 1;
-  }
-
-  .navbar-box .menu li a {
-    color: white;
-    font-size: 20px;
-    text-decoration: underline;
-  }
-}
-/* Navbar */
-
-/* Hero */
-.hero {
-  padding-top: 60px;
-}
-
-.hero-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.hero-box .box .harga {
-  font-size: 36px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  color: #481a1b;
-  font-weight: bold;
-}
-
-.hero-box p {
-  font-size: 16px;
-  line-height: 2;
-  margin-bottom: 30px;
-}
-
-.hero-box .details {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.hero-box a {
-  text-decoration: none;
-  background-color: #481a1b;
-  color: white;
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-}
-
-.hero-box img {
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-}
-
-@media (max-width: 768px) {
   .hero-box {
-    grid-template-columns: 1fr;
     text-align: center;
-    gap: 70px;
+  }
+
+  .hero-box img {
+    max-height: 420px;
+  }
+
+  .hero-box .harga {
+    font-size: 34px;
+  }
+
+  .hero-box .details {
+    font-size: 24px;
+  }
+
+  .detail-card {
+    padding: 22px;
+  }
+
+  .product-description {
+    padding: 25px;
+  }
+
+  .product-description p {
+    font-size: 14px;
+    line-height: 1.8;
   }
 }
-/* Hero */
-
-/* Produk */
-.produk {
-  padding-bottom: 80px;
-}
-
-.produk h1 {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.produk-box .produk-list .produk-info p {
-  font-size: 13px;
-  color: #666;
-  margin-bottom: 12px;
-  line-height: 1.4;
-  /* Jika teks terlalu panjang, batasi barisnya agar rapi */
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-/* Produk */
 
 /* Kontak */
-.hero-maps {
-  padding-top: 0px;
+.hero-maps h1 {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 30px;
 }
-
-.hero-maps-box {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.hero-maps-box h3 {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-  color: #481a1b;
-}
-
-.hero-maps-box p {
-  line-height: 2;
-}
-
-@media (max-width: 768px) {
-  .hero-maps-box {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 70px;
-  }
-
-  .hero-maps-box .box iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
+/* Kontak */
